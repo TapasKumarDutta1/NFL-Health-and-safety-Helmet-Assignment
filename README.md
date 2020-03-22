@@ -13,6 +13,7 @@ then used this to compared this to V4 to calculate a loss for these columns.
 
 
 focal_loss : Used previously selected parameters form bayesian optimization to optimize focal loss and used it them for predictions.
+Also used deep factorization machine for higher order interactions between categorical features.
 
 
 raw_preparation : filled numerical columns with mean and categorical columns with 'nan'. Dropped V columns since they are causing overfit.
