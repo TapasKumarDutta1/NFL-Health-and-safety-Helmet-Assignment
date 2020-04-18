@@ -21,6 +21,6 @@ Calculated mean and standard deviation of numerical columns afetr grouping by id
 top 5 most frequuent levels. Normalized and standerized numerical columns w.r.t transaction days(daily,weekly,monthly).
 
 
-time_vald : fitted lgbm model on earliest 50,000 columns and predicted on next 50,000 columns the number of rows in fitted increased
+time_vald : fitted lgbm model on earliest 50,000 rows and predicted on next 50,000 rows the number of rows in fitted increased
 by 40,000 upto 590,000 for each increase calculated roc_auc score for fitted rows and test rows.Selected columns which were best for 
 validation rows.
