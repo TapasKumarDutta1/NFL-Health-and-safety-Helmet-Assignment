@@ -1,15 +1,16 @@
-AUTOENC:created features using denoising autoencoder and selected top 100 features by training 50000 samples increasing iteratively and predicting next 50000 samples
+autoenc_prep_without_id:created features using denoising autoencoder and selected 256 features without using the uid column
 
+autoenc_prep_with_id:created features using denoising autoencoder and selected 256 features using the uid column
 
-ENSEMBLE:ensembled lgbm and neural net model
+cleaning_preprocessing_and adding_columns:data preprocessing
 
+cleaning_preprocessing_and adding_columns_with_id:data preprocessing along with creating uid columns
 
-FINDING_MAGIC_FEATURE:for a particular customer D4 is the cumulative sum of D3 so iteratively grouped by different columns and difference 
-between D3 and D4(after rolling by 1 and subtracting )
+final_submission:submission of 3 different models using roc,focal and binary cross entropy loss scoring 94.5 on public leaderboard kaggle
 
+simple_model_with_uid_embeddings: createn neural network using uid columns features extracted from autoencoder and uid columns with binary cross entropy
 
-RAW:Dropped V columns since they were causing overfitting filled numerical columns with their mean and categorical columns with nan, created unique id using columns found calculated mean and std of numerical columns after grouping by unique id added dummies for top 5 most common categories in categorical columns,since C and D columns are time varient normalized and standerized on basis of week,day,month
+simple_model_roc_auc_with_uid_embeddings: createn neural network using uid columns features extracted from autoencoder and uid columns with Wilcoxon-Mann-Whitney U statistic.
 
-
-FOCAL_LOSS: used bayesian optimization to find optimal values for focal loss
+simple_model_focal_loss_with_uid_embeddings: createn neural network using uid columns features extracted from autoencoder and uid columns with focal loss
 
