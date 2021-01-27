@@ -1,14 +1,18 @@
-#**autoenc_prep_without_id**
-created features using denoising autoencoder and selected 256 features without using the uid column
-
-#**autoenc_prep_with_id**
-created features using denoising autoencoder and selected 256 features using the uid column
 
 # cleaning_preprocessing_and adding_columns
 data preprocessing
 
+# magic_feature
+created the magic feature
+
 # cleaning_preprocessing_and adding_columns_with_id
 data preprocessing along with creating uid columns
+
+# autoenc_prep_without_id 
+created features using denoising autoencoder and selected 256 features without using the uid column
+
+# autoenc_prep_with_id**
+created features using denoising autoencoder and selected 256 features using the uid column
 
 # final_submission
 submission of 3 different models using roc,focal and binary cross entropy loss scoring 94.5 on public leaderboard kaggle
@@ -22,8 +26,6 @@ createn neural network using uid columns features extracted from autoencoder and
 # simple_model_focal_loss_with_uid_embeddings
 createn neural network using uid columns features extracted from autoencoder and uid columns with focal loss
 
-# magic_feature
-created the magic feature
 
 
 
