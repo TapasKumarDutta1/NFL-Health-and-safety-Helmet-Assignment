@@ -11,7 +11,7 @@ data preprocessing along with creating uid columns
 # autoenc_prep_without_id 
 created features using denoising autoencoder and selected 256 features without using the uid column
 
-# autoenc_prep_with_id**
+# autoenc_prep_with_id
 created features using denoising autoencoder and selected 256 features using the uid column
 
 # final_submission
