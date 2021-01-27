@@ -15,3 +15,11 @@ simple_model_roc_auc_with_uid_embeddings: createn neural network using uid colum
 simple_model_focal_loss_with_uid_embeddings: createn neural network using uid columns features extracted from autoencoder and uid columns with focal loss
 
 magic_feature:created the magic feature
+
+
+
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
