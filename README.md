@@ -19,7 +19,7 @@ magic_feature:created the magic feature
 
 
 
-Markdown | Less | Pretty
+model | type of validationy | auc
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
