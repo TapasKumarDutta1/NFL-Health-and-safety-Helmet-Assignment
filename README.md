@@ -1,5 +1,5 @@
 # General overview
-After preprocessing used denoising autoencoder for feature engineering we trained the simple neural network with 5 fold stratified cross validation model with focal loss, whitmann's approximation of roc and binary cross entropy with stochastic weight averaging and snapshot ensembling.  
+After preprocessing used denoising autoencoder for feature engineering. The model was trained the simple neural network with 5 fold stratified cross validation model with focal loss, whitmann's approximation of roc and binary cross entropy with stochastic weight averaging and snapshot ensembling. The final predictions was the mean of the predictions of 3 models. 
 
 ## cleaning_preprocessing_and adding_columns
 data preprocessing
