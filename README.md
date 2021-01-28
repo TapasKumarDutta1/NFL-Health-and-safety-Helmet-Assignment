@@ -35,21 +35,22 @@ createn neural network using uid columns features extracted from autoencoder and
 
 loss  | auc(public)|auc(private)
 --- | --- | ---
-roc approximation | 2 | 3
-focal loss | 2 | 3
-binary crossentropy | 2 | 3
-roc approximation with swa , weight ensemble and snapsort| 0.95 | 0.915
-focal loss with swa , weight ensemble and snapsort| 2 | 3
-binary crossentropy with swa , weight ensemble and snapsort| 2 | 3
+roc approximation | 0.944 | 0.909
+focal loss | 0.948 | 0.916
+binary crossentropy | 0.934 | 0.902
+roc approximation with swa , weight ensemble and snapsort| 0.951 | 0.916
+focal loss with swa , weight ensemble and snapsort| 94.9 | 91.7
+binary crossentropy with swa , weight ensemble and snapsort| 0.95 | 0.92
 
 
 ## Ensemble Results
 
  auc(public)|auc(private)
  --- | ---
- 2 | 3
+ 0.952 | 0.921
 
 
 ## References
 - https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476
 - https://github.com/tflearn/tflearn/issues/1028
+- https://www.kaggle.com/sergeifironov/bowl-stabilize-coefs-cntrs-all5
