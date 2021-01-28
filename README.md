@@ -57,7 +57,7 @@ roc approximation | 0.944 | 0.909
 focal loss | 0.948 | 0.916
 binary crossentropy | 0.934 | 0.902
 roc approximation with swa , weight ensemble and snapsort| 0.951 | 0.916
-focal loss with swa , weight ensemble and snapsort| 94.9 | 91.7
+focal loss with swa , weight ensemble and snapsort| 0.949 | 0.917
 binary crossentropy with swa , weight ensemble and snapsort| 0.95 | 0.92
 
 
