@@ -2,32 +2,50 @@
 After preprocessing used denoising autoencoder for feature engineering. The model was trained the simple neural network with 5 fold stratified cross validation model with focal loss, Wilcoxon Mann Whitney U statistic  and binary cross entropy with stochastic weight averaging and snapshot ensembling. The final predictions was the mean of the predictions of 3 models. 
 
 ## cleaning_preprocessing_and adding_columns
-data preprocessing
+### Continuous feature
+If skew is greater than 1 then subtract minimum then log of that column, followed by standard scaling.
+### Categorical feature
+For each column 50 most frequent values use one hot encoding replace the rest by 'Other'
+
+
 
 ## magic_feature
-created the magic feature
+It can be seen that V307 is the cumulative of Transaction amount for each individual so if we group by n given columns, get cumulative Transaction amount for one group, subtract it with the last value of V307 we should get 0. If we try to minimise this value we colud get columns that can be used to identify one individual. 
+
 
 ## cleaning_preprocessing_and adding_columns_with_id
-data preprocessing along with creating uid columns
+Same as cleaning_preprocessing_and adding_columns only added magic feature found by process described in magic_feature.
+
 
 ## autoenc_prep_without_id 
-created features using denoising autoencoder and selected 256 features without using the uid column
+Used denoising autoencoder(0.15 swap noise) for feature engineering on the dataset produced by cleaning_preprocessing_and adding_columns
 
 ## autoenc_prep_with_id
-created features using denoising autoencoder and selected 256 features using the uid column
+Used denoising autoencoder for feature engineering on the dataset produced by cleaning_preprocessing_and adding_columns_with_id
 
-## final_submission
-submission of 3 different models using roc,focal and binary cross entropy loss scoring 94.5 on public leaderboard kaggle
 
 ## simple_model_with_uid_embeddings
-createn neural network using uid columns features extracted from autoencoder and uid columns with binary cross entropy
+Used a simple neural network of 3 Dense layers followed by Batchnormalization and dropout of 0.3, concatenated it with the magic feature(id) generated after embedding it for 4 dimension and predicted using dense layer of 1 neuron and sigmoid. Trained this model with binary crossentropy and kfold crossvalidation.
 
 ## simple_model_roc_auc_with_uid_embeddings
-createn neural network using uid columns features extracted from autoencoder and uid columns with Wilcoxon-Mann-Whitney U statistic.
+The model used is same as described in simple_model_with_uid_embeddings and trained the network with Wilcoxon-Mann-Whitney U statistic.
 
 ## simple_model_focal_loss_with_uid_embeddings
-createn neural network using uid columns features extracted from autoencoder and uid columns with focal loss
+The model used is same as described in simple_model_with_uid_embeddings and trained the network with focal loss.
 
+
+
+## simple_model_with_uid_embeddings_swa
+Same as described in simple_model_with_uid_embeddings but used StochasticEnsembling and snapsort at a cycle length of 4 for 16 epochs
+
+## simple_model_roc_auc_with_uid_embeddings_swa
+Same as described in simple_model_roc_auc_with_uid_embeddings but used StochasticEnsembling and snapsort at a cycle length of 4 for 16 epochs.
+
+## simple_model_focal_loss_with_uid_embeddings_swa
+Same as described in simple_model_focal_loss_with_uid_embeddings but used StochasticEnsembling and snapsort at a cycle length of 5 for 20 epochs.
+
+## final_submission
+Ensembled the predictions by giving more weight to uncorelated predictions.
 
 
 
