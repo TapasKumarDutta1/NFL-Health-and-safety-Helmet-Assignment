@@ -48,7 +48,7 @@ binary crossentropy with swa , weight ensemble and snapsort| 0.95 | 0.92
  auc(public)|auc(private)
  --- | ---
  0.952 | 0.921
-
+![alt text](heatmap.png)
 
 ## References
 - https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476
