@@ -1,5 +1,5 @@
 # General overview
-After preprocessing used denoising autoencoder for feature engineering. The model was trained the simple neural network with 5 fold stratified cross validation model with focal loss, whitmann's approximation of roc and binary cross entropy with stochastic weight averaging and snapshot ensembling. The final predictions was the mean of the predictions of 3 models. 
+After preprocessing used denoising autoencoder for feature engineering. The model was trained the simple neural network with 5 fold stratified cross validation model with focal loss, Wilcoxon Mann Whitney U statistic  and binary cross entropy with stochastic weight averaging and snapshot ensembling. The final predictions was the mean of the predictions of 3 models. 
 
 ## cleaning_preprocessing_and adding_columns
 data preprocessing
@@ -31,8 +31,13 @@ createn neural network using uid columns features extracted from autoencoder and
 
 
 
+## Results
 
-model | type of validationy | auc
+loss  | auc(public)|auc(private)
 --- | --- | ---
-*Still* | `renders` | **nicely**
 1 | 2 | 3
+
+
+## References
+- https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476
+- https://github.com/tflearn/tflearn/issues/1028
