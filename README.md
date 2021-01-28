@@ -50,7 +50,7 @@ binary crossentropy with swa , weight ensemble and snapsort| 0.95 | 0.92
  0.952 | 0.921
  
  
- ## Correrelaion among predictions of best models.
+ ### Correrelaion among predictions of best models.
 ![alt text](heatmap.png)
 
 ## References
