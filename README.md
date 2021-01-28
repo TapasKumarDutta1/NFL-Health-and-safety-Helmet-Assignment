@@ -35,7 +35,9 @@ createn neural network using uid columns features extracted from autoencoder and
 
 loss  | auc(public)|auc(private)
 --- | --- | ---
-1 | 2 | 3
+roc approximation | 2 | 3
+
+roc approximation with swa and weight ensemble| 2 | 3
 
 
 ## References
