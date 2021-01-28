@@ -36,14 +36,19 @@ createn neural network using uid columns features extracted from autoencoder and
 loss  | auc(public)|auc(private)
 --- | --- | ---
 roc approximation | 2 | 3
-roc approximation with swa , weight ensemble and snapsort| 2 | 3
-roc approximation with swa , weight ensemble and snapsort| 2 | 3
 focal loss | 2 | 3
-focal loss with swa , weight ensemble and snapsort| 2 | 3
-focal loss with swa , weight ensemble and snapsort| 2 | 3
 binary crossentropy | 2 | 3
+roc approximation with swa , weight ensemble and snapsort| 2 | 3
+focal loss with swa , weight ensemble and snapsort| 2 | 3
 binary crossentropy with swa , weight ensemble and snapsort| 2 | 3
-binary crossentropy with swa , weight ensemble and snapsort| 2 | 3
+
+
+## Ensemble Results
+
+ auc(public)|auc(private)
+ --- | ---
+ 2 | 3
+
 
 ## References
 - https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476
