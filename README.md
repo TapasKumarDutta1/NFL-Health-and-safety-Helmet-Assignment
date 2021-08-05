@@ -73,7 +73,6 @@ binary crossentropy with swa , weight ensemble and snapsort| 0.95 | 0.92
 
 ## References
 - https://www.kaggle.com/c/ieee-fraud-detection/discussion/111476
-- https://github.com/tflearn/tflearn/issues/1028
 - https://arxiv.org/abs/1704.00109
 - https://arxiv.org/abs/1803.05407
 - https://www.kaggle.com/c/data-science-bowl-2019/discussion/127210
